@@ -21,10 +21,21 @@
 	require_once('includes/db.class.php');
 	$db 			= 	new dvdb();
 
-	$res = $db->get_row("select * from users order by id desc");
+	//$res = $db->get_row("select * from account_credits order by id ASC");
 
+
+/*$my_query = mysqli_query($conn, "select * from account_credits limit 9, 1");
+
+
+while($res = mysqli_fetch_assoc($my_query)){
 	print_r($res);
-	
+}
+
+*/
+
+
+
+
 
 
 
