@@ -24,6 +24,7 @@
 	$res = $db->get_row("select * from users order by id desc");
 
 	print_r($res);
+	
 
 
 
