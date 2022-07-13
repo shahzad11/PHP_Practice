@@ -8,7 +8,7 @@ require_once("loader.php");
 
     $email_address    = $_POST['email_address'];
     $password         = $_POST['password'];
-    
+
 
     $query            = mysqli_query($conn, "select * from users where email_address='$email_address' and password='$password'");
 
@@ -110,7 +110,7 @@ require_once("loader.php");
 
 <main class="form-signin w-100 m-auto">
   <form action="" enctype="multipart/form-data" method="post">
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <img class="mb-4" src="assets/images/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">

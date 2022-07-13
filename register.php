@@ -103,18 +103,18 @@ if(isset($_POST['email_address'])){
 
 <main class="form-signin w-100 m-auto">
   <form action="" enctype="multipart/form-data" method="post">
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <img class="mb-4" src="assets/images/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
 
     <?php echo $notice; ?>
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="" name="first_name">
-      <label for="floatingInput">Your First Name</label>
+      <input type="text" class="form-control" id="floatingInput1" placeholder="Your First Name" name="first_name">
+      <label for="floatingInput1">Your First Name</label>
     </div>
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="" name="last_name">
-      <label for="floatingInput">Last Name</label>
+      <input type="text" class="form-control" id="floatingInput2" placeholder="Your Last Name" name="last_name">
+      <label for="floatingInput2">Last Name</label>
     </div>
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email_address">
