@@ -5,7 +5,7 @@
 	define ("DB_HOST_NAME", "localhost");
 	define ("DB_USER", "root");
 	define ("DB_PASS", "pakistan");
-	define ("DB_NAME", "gbobber");
+	define ("DB_NAME", "php_practice");
 
 	/*error_reporting(0);
 	error_reporting(E_ALL);

@@ -1,5 +1,12 @@
 <?php
 
+@session_start();
+
+if($_SESSION['is_user_logged_in']!==1){
+  header("Location:login.php");
+}
+
+
 require_once("loader.php");
 
 if(isset($_GET['action'])){
@@ -49,6 +56,7 @@ $my_query = mysqli_query($conn, "select * from users order by id desc limit 10")
 <input type="submit" name="submit" value="EDIT Record"/>
 </form>
 
+<a href="logout.php">Logout</a>
 <table border="1" cellpadding="10" cellspacing="0">
   <tr>
       <th>First Name</th>
