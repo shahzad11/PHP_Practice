@@ -5,6 +5,7 @@
 if($_SESSION['is_user_logged_in']!==1){
   header("Location:login.php");
 }
+$user_id  = $_SESSION['user_id'];
 
 
 require_once("loader.php");
@@ -39,6 +40,8 @@ $my_query = mysqli_query($conn, "select * from users order by id desc limit 10")
 ?>
 
 
+<?php include_once("includes/top.php"); ?>
+
 <form method="post" action="" enctype="multipart/form-data">
 
   Email Address
@@ -56,7 +59,6 @@ $my_query = mysqli_query($conn, "select * from users order by id desc limit 10")
 <input type="submit" name="submit" value="EDIT Record"/>
 </form>
 
-<a href="logout.php">Logout</a>
 <table border="1" cellpadding="10" cellspacing="0">
   <tr>
       <th>First Name</th>

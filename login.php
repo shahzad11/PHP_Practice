@@ -12,9 +12,9 @@ require_once("loader.php");
 
     $query            = mysqli_query($conn, "select * from users where email_address='$email_address' and password='$password'");
 
-    /*
+
     $res = mysqli_fetch_assoc($query);
-    print_r($res);
+    /*print_r($res);
     */
 
 
@@ -22,6 +22,7 @@ require_once("loader.php");
 
     if($found_accounts>0){
         $_SESSION['is_user_logged_in']  = 1;
+        $_SESSION['user_id']            = $res['id'];
         header("Location:index.php");
     }
 
